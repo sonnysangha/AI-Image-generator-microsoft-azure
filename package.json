@@ -6,9 +6,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "@azure/storage-blob": "^12.13.0",
     "next": "latest",
+    "openai": "^3.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-grid-gallery": "^1.0.0",
+    "react-hot-toast": "^2.4.0",
+    "swr": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
