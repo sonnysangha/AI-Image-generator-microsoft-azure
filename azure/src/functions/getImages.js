@@ -31,7 +31,7 @@ app.http("getImages", {
     // List all blobs in the container
     for await (const blob of containerClient.listBlobsFlat()) {
       const imageUrl = `${blob.name}?${sasToken}`;
-      const url = `https://sonnytestapp38d554.blob.core.windows.net/images/${imageUrl}`;
+      const url = `https://${accountName}.blob.core.windows.net/images/${imageUrl}`;
       imageUrls.push({ url, name: blob.name });
     }
 
